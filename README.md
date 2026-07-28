@@ -28,4 +28,15 @@ This project builds an OLS regression model to forecast Target's quarterly net s
    - `backtoschool_DV`: binary dummy equal to 1 for Q3 (back-to-school season)
    - `backtoschool_DV_interaction`: `time × backtoschool_DV`
 3. **Train/test split** — First 75% of observations used for training; remaining 25% (2018 Q1–2023 Q1) held out for testing.
-4. **Model** — Ordinary Least Squares (OLS) regression via `statsmodels`, regressing `saleq` on `time`, the two
+4. **Model** — Ordinary Least Squares (OLS) regression via `statsmodels`, regressing `saleq` on `time`, the two seasonal dummies, and their interaction terms.
+5. **Evaluation** — Mean Absolute Percentage Error (MAPE) computed on the held-out test set.
+
+## Results
+
+| Metric | Value |
+|---|---|
+| Test MAPE | ~12.0% |
+
+The fitted coefficients show a positive linear trend (~$136M in incremental quarterly revenue per period) plus a strong Q4 seasonal lift (~$4,105M above baseline), consistent with Target's holiday-driven sales pattern. Predicted values track the overall trend and seasonal cycle of actual revenue reasonably well, though the model tends to underpredict the magnitude of the most recent Q4 peaks.
+
+## Repository Structure
