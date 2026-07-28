@@ -37,6 +37,6 @@ This project builds an OLS regression model to forecast Target's quarterly net s
 |---|---|
 | Test MAPE | ~12.0% |
 
-The fitted coefficients show a positive linear trend (~$136M in incremental quarterly revenue per period) plus a strong Q4 seasonal lift (~$4,105M above baseline), consistent with Target's holiday-driven sales pattern. Predicted values track the overall trend and seasonal cycle of actual revenue reasonably well, though the model tends to underpredict the magnitude of the most recent Q4 peaks.
+The fitted coefficients show a positive linear trend (approximately $136M in incremental quarterly revenue per period) plus a strong Q4 seasonal lift (approximately $4,105M above baseline), consistent with Target's holiday-driven sales pattern. Predicted values track the overall trend and seasonal cycle of actual revenue reasonably well, though the model tends to underpredict the magnitude of the most recent Q4 peaks.
 
 ## Repository Structure
